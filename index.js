@@ -1,3 +1,5 @@
 // Run `node index.js` in the terminal
 
-console.log(`Hello Node.js v${process.versions.node}!`);
+require('http')
+  .createServer((req, res) => res.end('xD'))
+  .listen(80);
